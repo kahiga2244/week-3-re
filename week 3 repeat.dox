@@ -1,0 +1,117 @@
+    1. Business Understanding
+Business Overview
+MTN Cote d'Ivoire is a telecommunications company started in the year 2005 which is in Ivory Coast.The company connects people and communities through voice , data services ,financial transactions and mobile advertisement.
+Business Objective
+The objective of this report is to identify how  MTN Cote d'Ivoire will  upgrade its 
+infrastructure strategy within the given cities
+Business Success Criteria
+To compile a list of cities where MTNCote d’Ivoire is most used in business hours , home hours and where MTNCote d’Ivoire the most used city users
+Assessing the Situation
+    1. Resource Inventory
+1.Datasets
+    a. cells_geo_description.xlsx [Link]
+    b. cells_geo.csv [Link]
+    c. CDR_description.xlsx [Link]
+    d. CDR 20120507 [http://bit.ly/TelecomDataset1]
+    e. CDR 20120508 [http://bit.ly/TelecomDataset2]
+    f. CDR 20120509 [http://bit.ly/TelecomDataset3]
+
+          2. Software( Github, Google Collaboratory, python)
+    2. Assumptions
+        1. The data provided is correct and up to date
+    3. Constraints
+        1. There are no constraints
+Data Mining Goals
+The main data mining goals for this partcular set of  project are :
+    a. The most used cities for three days
+
+    b. The cities most used in business hours and home hours
+
+    c. The most used city in three days
+Data Mining Success Criteria
+The criteria we will use/follow in this project will be measured by;
+    • Target the towns with most users by totalling the users in the city
+
+    • 
+    • Totalling the hours the service use during the business  and home hours
+2. Data Understanding
+ Data Understanding Overview
+
+For this we will use the datasets below.
+    • cells_geo_description.xlsx [Link]
+    • cells_geo.csv [Link]
+    • CDR_description.xlsx [Link]
+    • CDR 20120507 [http://bit.ly/TelecomDataset1]
+    • CDR 20120508 [http://bit.ly/TelecomDataset2]
+    • CDR 20120509 [http://bit.ly/TelecomDataset3]
+Data Description
+We will be using the six datasets provided.Here is what each dataset entails:
+Cells _geo : locations of cell_id by giving longitude, latitude, status, region z
+    • Cells_geo_description : describes the columns of cells_geo
+    • CDR_description:  describes the columns of the other datasets
+    • CDR 20120507(TelecomDataset1) :  first day data
+    • CDR 20120508(TelecomDataset2): second data
+    • CDR 20120509(TelecomDataset3): third day data
+Verifying Data Quality
+Some datasets had missing values.
+    1. Data Preparation
+These are the steps followed in preparing the data
+    1. Loading Data
+Downloaded  the datasets from the link provided the  uploaded the datasets  from the CSV 
+ and the excel to my working space in github.
+      2.   Cleaning  data
+While going through the data i noticed the telcom_dataset,telcom_dataset2,telcom_data3 
+had the same column names so we merged the three
+I also noticed some of the column names were mispelt then renamed 
+ the 'SIET_ID' to 'SITE_ID'  'CELLID'  to 'CELL_ID'
+The columns that had missing value  dropped
+3. Merging of the Datasets
+After cleaning the data, it was time to merge the four datasets.
+
+4. Deriving New Attributes
+I worked on the mean values then calculated the total values 
+Merged the various dataset into one
+4. Analysis
+Some regions did not have any phone reception for some minutes
+We also single out sms  as the most used product.
+most used cities during the three days:-
+YOPOUGON,
+ABOBO,
+COCODY 
+most used during the three days:-
+Abidjan_OUEST     
+Abidjan_NORD       
+Grand-SUD         
+Abidjan_EST        
+Abidjan_SUD        
+Grand-OUEST        
+
+ most used regions  during the three days:-
+LAGUNE              
+LACS                  
+BAS SASSANDRA         
+HAUT SASSANDRA        
+VALLEE DU BANDAMA     
+SUD BANDAMA           
+SAVANE                 
+FROMAGER               
+              
+
+
+The above analysis was done using SQLite. The full analysis can be found in the following:
+Notebook [https://drive.google.com/open?id=1KLw0mM-nS0ehw61eZ7S7T3uWOm-asexj]
+
+GITHUB
+[https://github.com/kahiga2244/week-3-re.git]
+
+5. Recommendations
+I recommend for more promotions/ advertisement in the areas with zero values
+To main thier boosters / centers for airwaves 
+I recommend that we should make the regions used most to be priotized
+
+  
+
+
+
+
+
